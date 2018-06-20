@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Spirax|Ubuntu|Lobster" rel="stylesheet">
+</head>
+<body>
+  <h1 id='title'>Survey Form</h1>
+  <div id='card'>
+    <p id='description'>What's your favorite media?</p>
+    <div class='forms'>
+      <form id='survey-form'>
+        <div class='name'>
+          <div class='labels'>
+            <label id='name-label' for='name'>*Name:</label>
+          </div>
+          <input type='text' class='inputs' id='name' name='name' placeholder='Enter your name' required>
+        </div>
+        <div class='email'>
+          <div class='labels'>
+            <label id='email-label' for='email'>*Email:</label>
+          </div>
+          <input type='email' id='email' class='inputs' name='email' placeholder='Enter your email' required>
+        </div>
+        <div class='age'>
+          <div class='labels'>
+            <label id='number-label' for='age'>*Age:</label>
+          </div>
+          <input type='number' name='age' id='number' class='inputs' min='1' max='125' placeholder='Age' required>
+        </div>
+        <div class='shows'>
+          <div class='labels'>
+            <label for='shows'>Pick your show!</label>
+          </div>
+          <div class='inputs'>
+            <select class='dropdown' id='dropdown' name='shows'>
+              <option value='Choose'>Choose your favorite show!</option>
+              <option value='Game of Thrones'>Game of Thrones</option>
+              <option value='Billion'>Billions</option>
+              <option value='WestWorld'>WestWorld</option>
+              <option value='Stranger Things'>Stranger Things</option>
+              <option value='House of Cards'>House of Cards</option>
+              <option value='Black Mirror'>Black Mirror</option>
+              <option value='Your show stinks'>THIS LIST STINKS!</option>
+            </select>
+          </div>
+        </div>
+        <div class='radiobuttons'>
+          <div class='labels'>
+            <label for='networks'>What's the better network?</label>
+          </div>
+          <div class='inputs'>
+            <label for='HBO'><input id='HBO' type='radio' name='networks' value='1'>HBO</label><br>
+            <label for='Netflix'><input id='Netflix' type='radio' name='networks' value='2'>Netflix</label>
+          </div>
+        </div>
+        <div class='checkboxes'>
+          <div class='labels'>
+            <label for='movies'>Which of these movies do you like?</label>
+          </div>
+          <div class=inputs>
+            <label for='Inception'><input name='movies' type='checkbox' id='Inception' value='1'>Inception</label><br>
+            <label for='Interstellar'><input id='Interstellar' value='2' type='checkbox' name='movies'>Interstellar</label><br>
+            <label for='Arrival'><input id='Arrival' value='3' name='movies' type='checkbox'>Arrival</label><br>
+            <label for='Gangs of New York'><input id='Gangs of New York' name='movies' type='checkbox' value='4'>Gangs of New York</label>
+          </div>
+        </div>
+        <div class='labels'>
+          <label for='comments'>Missed some gems? Tells us about it.</label>
+        </div>
+        <div class='inputs'>
+          <textarea class='textareabox' id='comments' name='comments' placeholder='Witty comment yonder.'></textarea>
+        </div><br>
+        <button id='submit' type='submit'>Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
