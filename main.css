@@ -87,3 +87,12 @@ body {
    transform: translateX(0px)
  }
 }
+
+@media screen and (max-width:700px) {
+  #card {
+    width: 98%;
+  }
+  .dropdown {
+    font-size: 10px;
+  }
+}
